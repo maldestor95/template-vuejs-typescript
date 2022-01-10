@@ -107,16 +107,32 @@
         >
       </li>
     </ul>
+    {{ getmsg() }}
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from "vue";
+type toto = string;
 
 export default defineComponent({
   name: "HelloWorld",
   props: {
     msg: String,
+  },
+  data() {
+    return {
+      key: 123,
+    };
+  },
+  setup(props) {
+    console.log(props.msg);
+  },
+  methods: {
+    getmsg() {
+      const t: toto = "444123";
+      return t;
+    },
   },
 });
 </script>

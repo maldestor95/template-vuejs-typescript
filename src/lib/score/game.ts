@@ -81,7 +81,7 @@ export default class GAME {
     if (roundId > this.numberOfPlayer || roundId <= 0) return false;
 
     for (let index = 0; index < this._players.length; index++) {
-      //   this._players[index].score.(roundId);
+      this._players[index].score.editRound(roundId, roundScores[index]);
     }
     return true;
   }

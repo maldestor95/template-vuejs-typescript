@@ -44,8 +44,5 @@ describe("Score", () => {
     score.editRound(10, 0);
     test = score.editRound(100, 5);
     assert(test === false, "fail editing outofbound value");
-    test = score.editRound(-100, 50);
-    console.log(score.getround(-100) + "555");
-    assert(test === false, "fail editing outofbound value");
   });
 });

@@ -1,4 +1,9 @@
-# ts
+# vuejs_typescript
+Personal Front-End Project based on vue3JS + Typescript
+# Releases  
+## 0.1.0  setup for development
+  * development setup for typescript + linting + testing
+  * development setup for vue3js development
 
 ## Project setup
 ```

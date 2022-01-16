@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test": "set TS_NODE_COMPILER_OPTIONS={\"module\":\"commonjs\"} &&  mocha -r mocha.env.js -r ts-node/register src/**/*.spec.ts --colors",
+    "test": "set TS_NODE_PROJECT=tsconfig.commonjs.json&& mocha -r ts-node/register src/**/*.spec.ts --colors",
     "coverage": "nyc npm run test"
   },
   "dependencies": {

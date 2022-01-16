@@ -15,10 +15,10 @@ npm run serve
 npm run build
 ```
 
-### Lints and fixes files
+### Tests
 ```
-npm run lint
+npm run test => Test Typescripts files in ./src/**
+npm run test:unit => test Vuejs files located in ./tests/unit/**
 ```
-
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
